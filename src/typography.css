@@ -1,0 +1,113 @@
+/* ══════════════════════════════════════════════════
+   VANNAM — typography & text colour layer
+   Fonts + text colours only. No backgrounds, sizes, spacing or motion live here.
+   Every selector is prefixed `html body` so it wins over any page stylesheet, whatever the load order.
+   ══════════════════════════════════════════════════ */
+
+html body { --ink-soft: #3B1F2B; }
+html body .hand,
+html body .eyebrow,
+html body .search__close,
+html body .pp__sheet h2,
+html body .contact__card h2 { font-weight: 400; font-synthesis: style; }
+html body .eyebrow { color: var(--cherry); text-shadow: 2px 2px 0 var(--butter); }
+html body .shop__head .eyebrow,
+html body .story__head .eyebrow { color: var(--cherry); text-shadow: 2px 2px 0 var(--paper); }
+html body .shop__head--search .eyebrow { color: var(--cobalt); text-shadow: 2px 2px 0 var(--paper); }
+html body .about__hero .eyebrow,
+html body .finale .eyebrow { color: var(--paper); text-shadow: 2px 2px 0 var(--ink); }
+html body .contact__left .eyebrow { color: var(--cobalt); text-shadow: 2px 2px 0 var(--paper); }
+html body .teaser__text .eyebrow { color: var(--butter); text-shadow: 2px 2px 0 var(--ink); }
+html body .title-xl { font-weight: 400; font-synthesis: style; letter-spacing: -.01em; color: var(--ink); text-shadow: .022em .022em 0 var(--paper), .045em .045em 0 var(--ink); }
+html body .title-xl em { color: var(--cherry); }
+html body .about__hero .title-xl,
+html body .finale .title-xl { color: var(--ink); text-shadow: .035em .035em 0 var(--paper); }
+html body .about__hero .title-xl em,
+html body .finale .title-xl em { color: var(--paper); text-shadow: .045em .045em 0 var(--ink); }
+html body .teaser .title-xl { color: var(--paper); text-shadow: .045em .045em 0 var(--ink); }
+html body .teaser .title-xl em { color: var(--butter); }
+html body .lost .title-xl { color: #fff; text-shadow: .045em .045em 0 var(--ink); }
+html body .lost .title-xl em { color: var(--butter); }
+html body .hero__title { font-weight: 400; font-synthesis: style; letter-spacing: -.015em; text-shadow: .035em .035em 0 var(--accent-sh); }
+html body .hero__line--it { color: var(--accent-hi); text-shadow: .035em .035em 0 var(--ink); }
+html body .hero__eyebrow { color: var(--accent-hi); text-shadow: 2px 2px 0 var(--ink); }
+html body .hero__sub { font-weight: 600; }
+html body .hero__name { font-family: var(--font-body); font-weight: 700; text-shadow: 2px 2px 0 var(--accent-sh); }
+html body .hero__psst { color: var(--accent-hi); text-shadow: 2px 2px 0 var(--ink); }
+html body .hero__price { font-weight: 700; }
+html body .ribbon__row span { font-family: var(--font-display); font-weight: 400; font-synthesis: style; }
+html body .c3d__title { font-weight: 400; font-synthesis: style; color: var(--stage-fg); text-shadow: .035em .035em 0 var(--stage-sh); }
+html body .c3d__title em { color: var(--stage-hi); text-shadow: .035em .035em 0 var(--ink); }
+html body .c3d__kicker { opacity: 1; color: var(--stage-hi); text-shadow: 2px 2px 0 var(--ink); }
+html body .c3d__count { opacity: 1; color: var(--stage-hi); text-shadow: 2px 2px 0 var(--ink); }
+html body .c3d__caption h3 { font-weight: 400; font-synthesis: style; color: var(--stage-fg); text-shadow: .035em .035em 0 var(--stage-sh); }
+html body .c3d__caption p { opacity: 1; font-weight: 500; }
+html body .c3d__cta strong { color: var(--stage-hi); text-shadow: 2px 2px 0 var(--ink); }
+html body .c3d__tag-name { font-family: var(--font-body); font-weight: 600; color: var(--ink); }
+html body .c3d__tag-price { color: var(--cherry); font-weight: 700; }
+html body .cat__count { font-weight: 400; font-synthesis: style; opacity: 1; color: var(--cat-hi); text-shadow: 2px 2px 0 var(--cat-sh); }
+html body .cat__name { font-weight: 400; font-synthesis: style; text-shadow: .04em .04em 0 var(--cat-sh); }
+html body .cat__go { font-weight: 700; color: var(--cat-hi); text-shadow: 1.5px 1.5px 0 var(--cat-sh); }
+html body .teaser__text p:not(.eyebrow) { opacity: 1; color: var(--paper); font-weight: 500; }
+html body .teaser__note { color: var(--butter); text-shadow: 2px 2px 0 var(--ink); }
+html body .sec-link { font-weight: 700; }
+html body .pcard__cat { font-weight: 400; font-synthesis: style; color: var(--cherry); text-shadow: 1.5px 1.5px 0 var(--butter); }
+html body .pcard__name { font-family: var(--font-body); font-weight: 700; color: var(--ink); }
+html body .pcard__price span { font-weight: 700; color: var(--cherry); text-shadow: 1px 1px 0 var(--butter); }
+html body .zip__hint { font-weight: 400; font-synthesis: style; color: var(--butter); text-shadow: 1.5px 1.5px 0 var(--hot); }
+html body .zip__v,
+html body .zipmenu__home,
+html body .loader__v { font-weight: 400; font-synthesis: style; }
+html body .zipmenu__num { font-weight: 400; font-synthesis: style; color: var(--paper); text-shadow: 2px 2px 0 var(--ink); }
+html body .zipmenu__label { font-weight: 400; font-synthesis: style; letter-spacing: 0; text-shadow: .022em .022em 0 var(--paper), .045em .045em 0 var(--ink); }
+html body .zipmenu__note { font-weight: 400; font-synthesis: style; opacity: 1; color: var(--cobalt); text-shadow: 2px 2px 0 var(--paper); }
+html body .zipmenu__search label { color: var(--ink); text-shadow: 2px 2px 0 var(--paper); }
+html body .zipmenu__close { color: var(--ink); text-shadow: 2px 2px 0 var(--paper); }
+html body .zipmenu__cats a { font-weight: 600; }
+html body .shop__chips a { font-weight: 600; }
+html body .shop__sort .hand,
+html body .shop__empty .hand { color: var(--cherry); text-shadow: 2px 2px 0 var(--butter); }
+html body .shop__meta { font-weight: 600; }
+html body .pp__title { font-weight: 400; font-synthesis: style; letter-spacing: -.005em; color: var(--ink); text-shadow: .035em .035em 0 var(--hot); }
+html body .pp__desc { color: var(--ink); font-weight: 500; }
+html body .pp__sheet h2 { color: var(--cherry); text-shadow: 2px 2px 0 var(--butter); }
+html body .pp__kind { opacity: 1; color: var(--accent-hi); text-shadow: 2px 2px 0 var(--ink); }
+html body .pp__tags li { font-weight: 600; }
+html body .pp__price span { font-weight: 800; }
+html body .stat__num { font-weight: 400; font-synthesis: style; text-shadow: .04em .04em 0 var(--ink); }
+html body .about__stats > :nth-child(1) .stat__num { color: #fff; }
+html body .about__stats > :nth-child(2) .stat__num { color: var(--cherry); text-shadow: .04em .04em 0 var(--paper); }
+html body .about__stats > :nth-child(3) .stat__num { color: var(--cobalt); text-shadow: .04em .04em 0 var(--paper); }
+html body .stat__label { font-weight: 700; }
+html body .story__lede { font-weight: 600; }
+html body .story__words-row span { font-weight: 400; font-synthesis: style; }
+html body .story__words-row span:nth-child(3n+2) { color: var(--butter); }
+html body .story__words-row span:nth-child(3n) { color: var(--hot); }
+html body .story__tile .hand { color: var(--cherry); text-shadow: 2px 2px 0 var(--butter); }
+html body .contact__card h2 { color: var(--cherry); text-shadow: 2px 2px 0 var(--butter); }
+html body .contact__left > p:not(.eyebrow) { font-weight: 500; }
+html body .contact__note { color: var(--cobalt); text-shadow: 2px 2px 0 var(--butter); }
+html body .field label { font-weight: 600; }
+html body .contact__form h2,
+html body .contact__sent h2 { font-weight: 400; font-synthesis: style; }
+html body .lost__num { font-weight: 400; font-synthesis: style; text-shadow: .03em .03em 0 var(--ink); }
+html body .lost p:not(.lost__num) { color: #fff; font-weight: 500; }
+html body .foot__big { font-weight: 400; font-synthesis: style; color: var(--hot); text-shadow: .035em .035em 0 var(--cobalt); overflow: visible; }
+html body .foot__brand .hand { color: var(--butter); text-shadow: 2px 2px 0 var(--cherry); }
+html body .foot__brand p:last-child { opacity: 1; font-weight: 500; }
+html body .foot__col h3 { font-weight: 700; color: var(--butter); }
+html body .foot__col a { opacity: 1; font-weight: 500; }
+html body .foot__legal { opacity: 1; color: var(--blush); }
+html body .bag__head h2,
+html body .bag__empty-title { font-weight: 400; font-synthesis: style; text-shadow: .03em .03em 0 var(--hot); }
+html body .bag__name { font-family: var(--font-body); font-weight: 600; }
+html body .bag__empty .hand { color: var(--cherry); text-shadow: 2px 2px 0 var(--butter); }
+html body .search__name { font-family: var(--font-body); font-weight: 600; }
+html body .search__cat,
+html body .search__note,
+html body .search__empty .hand { color: var(--cherry); text-shadow: 1.5px 1.5px 0 var(--butter); }
+html body .peek__cap strong { font-family: var(--font-body); font-weight: 700; }
+html body .peek__cat { color: var(--cherry); text-shadow: 2px 2px 0 var(--butter); }
+html body .peek__hint { opacity: 1; color: var(--paper); text-shadow: 2px 2px 0 var(--ink); }
+/* the new display face has a deeper descender: lift "Say hello." visually so it clears the paragraph under it (no layout change) */
+html body .contact__left .title-xl { position: relative; top: -.12em; }

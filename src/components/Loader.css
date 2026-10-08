@@ -1,0 +1,6 @@
+.loader { min-height: 60svh; display: grid; place-items: center; perspective: 600px; }
+.loader__v {
+  display: grid; place-items: center; width: 84px; height: 84px; border-radius: 22px;
+  background: var(--hot); color: var(--ink); border: 3px solid var(--ink); box-shadow: 5px 5px 0 var(--ink);
+  font-family: var(--font-display); font-style: italic; font-weight: 800; font-size: 3rem;
+}

@@ -1,0 +1,25 @@
+.peek {
+  position: fixed; inset: 0; z-index: 1200;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px;
+  padding: 24px var(--gutter);
+  background: rgba(26, 14, 20, 0.42);
+  -webkit-backdrop-filter: blur(20px) saturate(1.25);
+  backdrop-filter: blur(20px) saturate(1.25);
+  perspective: 1000px;
+  touch-action: none;
+}
+.peek__card {
+  width: min(86vw, 400px);
+  margin: 0;
+  background: var(--paper);
+  border: 3px solid var(--ink);
+  border-radius: 24px;
+  padding: 12px;
+  box-shadow: 0 30px 80px rgba(26, 14, 20, 0.55), 10px 10px 0 var(--accent-peek, var(--hot));
+}
+.peek__card .photo { border-radius: 14px; }
+.peek__cap { display: grid; gap: 2px; padding: 12px 6px 4px; color: var(--ink); }
+.peek__cat { font-size: 1.25rem; color: var(--cherry); line-height: 1; }
+.peek__cap strong { font-family: var(--font-display); font-size: 1.25rem; line-height: 1.2; }
+.peek__price { font-weight: 700; font-size: 1.05rem; }
+.peek__hint { color: var(--paper); font-size: 1.3rem; opacity: 0.85; }

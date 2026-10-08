@@ -1,0 +1,29 @@
+.about__hero {
+  background: var(--hot); border: 2px solid var(--ink);
+  display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); align-items: center; gap: clamp(20px, 4vw, 60px);
+  padding: clamp(28px, 5vw, 72px);
+}
+.about__hero .eyebrow { color: var(--ink); margin-bottom: 8px; }
+.about__hero .title-xl { font-size: clamp(2.4rem, 6.4vw, 5.4rem); }
+.about__photo { max-width: 380px; width: 100%; justify-self: center; perspective: 1000px; }
+.about__frame { background: var(--paper); border: 3px solid var(--ink); border-radius: 20px; padding: 10px; box-shadow: 10px 10px 0 var(--ink); }
+.about__frame .photo { border-radius: 12px; }
+@media (max-width: 800px) { .about__hero { grid-template-columns: 1fr; } .about__photo { max-width: 300px; } }
+
+.about__philosophy { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(20px, 4vw, 56px); align-items: start; }
+.about__text { display: grid; gap: 16px; }
+.about__text .title-xl { font-size: clamp(2.2rem, 5vw, 4rem); }
+.about__text p { max-width: 54ch; font-size: 1.08rem; }
+.about__stats { display: grid; gap: 14px; perspective: 1100px; }
+.stat__in {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 12px;
+  padding: 18px 22px; border: 2px solid var(--ink); border-radius: 18px; box-shadow: 6px 6px 0 var(--ink);
+}
+.stat__num { font-family: var(--font-display); font-style: italic; font-weight: 800; font-size: clamp(2.2rem, 4.6vw, 3.4rem); line-height: 1; }
+.stat__label { font-weight: 700; text-align: right; }
+@media (max-width: 800px) { .about__philosophy { grid-template-columns: 1fr; } }
+
+.about__cta {
+  background: var(--butter); border: 2px solid var(--ink);
+  display: grid; justify-items: center; text-align: center; gap: 18px; padding: clamp(40px, 8vw, 100px) 20px;
+}

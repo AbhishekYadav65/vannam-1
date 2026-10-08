@@ -1,0 +1,4 @@
+.lost { background: var(--cherry); color: #fff; border: 2px solid var(--ink); display: grid; justify-items: center; text-align: center; gap: 14px; padding: clamp(44px, 9vw, 120px) 20px; perspective: 900px; }
+.lost__num { font-family: var(--font-display); font-style: italic; font-weight: 800; font-size: clamp(6rem, 24vw, 16rem); line-height: .8; color: var(--butter); -webkit-text-stroke: 3px var(--ink); }
+.lost .title-xl { font-size: clamp(2.2rem, 6vw, 4.6rem); }
+.lost .btn--ink { box-shadow: 4px 4px 0 var(--butter); }

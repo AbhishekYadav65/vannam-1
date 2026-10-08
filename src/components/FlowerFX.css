@@ -1,0 +1,11 @@
+.fx-layer { position: fixed; inset: 0; pointer-events: none; z-index: 1300; overflow: hidden; }
+.fx-petal { position: absolute; filter: drop-shadow(0 2px 3px rgba(26,14,20,.25)); will-change: transform; }
+.fx-fly {
+  position: absolute; left: 0; top: 0; width: 56px; height: 56px; object-fit: cover;
+  border-radius: 12px; border: 2px solid var(--paper); box-shadow: 0 8px 20px rgba(26,14,20,.35);
+  background: #fff;
+}
+.sr-only {
+  position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}

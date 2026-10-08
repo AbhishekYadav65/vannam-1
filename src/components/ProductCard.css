@@ -1,0 +1,54 @@
+.pgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr));
+  gap: clamp(18px, 2.4vw, 34px) clamp(14px, 2vw, 28px);
+  perspective: 1400px;
+}
+@media (max-width: 560px) { .pgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 12px; } }
+
+.pcard { position: relative; }
+.pcard__body {
+  display: flex; flex-direction: column; gap: 10px;
+  transition: opacity .35s, filter .35s;
+  will-change: transform;
+}
+.pcard__link { display: block; -webkit-touch-callout: none; -webkit-tap-highlight-color: transparent; touch-action: pan-y; }
+.pcard__frame {
+  position: relative;
+  border-radius: var(--r-md);
+  border: 2px solid var(--ink);
+  box-shadow: 6px 6px 0 var(--accent);
+  overflow: hidden;
+  background: #fff;
+  transition: box-shadow .3s var(--ease-out);
+}
+.pcard__frame .photo { border-radius: 0; }
+.pcard__alt { position: absolute; inset: 0; opacity: 0; transition: opacity .5s var(--ease-out); }
+.pcard__alt .photo { border-radius: 0; }
+@media (hover: hover) {
+  .pcard:hover .pcard__alt { opacity: 1; }
+  .pcard:hover .pcard__frame { box-shadow: 10px 12px 0 var(--accent); }
+  /* the one you look at stays loud, the rest of the "chaos" steps back */
+  .pgrid:has(.pcard:hover) .pcard:not(:hover) .pcard__body { opacity: .42; filter: saturate(.55) blur(.6px); }
+}
+.pcard__badge {
+  position: absolute; top: 10px; left: 10px; z-index: 2;
+  background: var(--ink); color: var(--paper);
+  font-size: .72rem; font-weight: 700; padding: 4px 9px; border-radius: 8px;
+  transform: rotate(-4deg);
+}
+.pcard__info { display: grid; gap: 0; padding: 8px 4px 0; }
+.pcard__cat { font-size: 1.15rem; line-height: 1; color: var(--cherry); }
+.pcard__name { font-family: var(--font-display); font-weight: 600; font-size: 1.08rem; line-height: 1.22; color: var(--ink); }
+.pcard__buy { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 0 4px; }
+.pcard__price { display: flex; align-items: baseline; gap: 8px; font-weight: 700; }
+.pcard__price s { font-weight: 400; font-size: .82rem; color: var(--ink-soft); }
+.pcard__add {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 8px 14px; border-radius: 10px;
+  background: var(--ink); color: var(--paper);
+  font-size: .85rem; font-weight: 600;
+  transition: transform .25s var(--ease-spring), background .25s;
+}
+.pcard__add:hover { background: var(--cherry); transform: translateY(-2px) rotate(-2deg); }
+.pcard__add:active { transform: scale(.94); }

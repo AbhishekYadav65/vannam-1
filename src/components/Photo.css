@@ -1,0 +1,31 @@
+/* Product photo frame — one consistent shape for every image on the site */
+.photo {
+  --mat: color-mix(in srgb, var(--accent, #FF5C93) 16%, #ffffff);
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: var(--mat);
+  border-radius: var(--r-md);
+  isolation: isolate;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+.photo--fill { position: absolute; inset: 0; width: 100%; height: 100%; border-radius: inherit; }
+.photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
+.photo--studio img {
+  object-fit: contain;
+  padding: 7%;
+  mix-blend-mode: multiply;
+  filter: brightness(1.035);
+}
+.photo--lifestyle img { object-fit: cover; object-position: 50% 55%; }
+.photo--infographic { background: #fff; }
+.photo--infographic img { object-fit: contain; }
